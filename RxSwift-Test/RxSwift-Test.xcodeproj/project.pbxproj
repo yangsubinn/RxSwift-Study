@@ -122,16 +122,8 @@
 		2B1EC45126EF1AAC00C48EA8 /* RxSwift-Test */ = {
 			isa = PBXGroup;
 			children = (
-				2B1EC45226EF1AAC00C48EA8 /* AppDelegate.swift */,
-				2B1EC45426EF1AAC00C48EA8 /* SceneDelegate.swift */,
-				2B1EC45626EF1AAC00C48EA8 /* ViewController.swift */,
-				2B83334B27037313007A9BD6 /* ObservableTestVC.swift */,
-				2B1EC45826EF1AAC00C48EA8 /* Main.storyboard */,
-				2B1EC45B26EF1AAD00C48EA8 /* Assets.xcassets */,
-				2B1EC45D26EF1AAD00C48EA8 /* LaunchScreen.storyboard */,
-				2B1EC46026EF1AAD00C48EA8 /* Info.plist */,
-				2B664D692712F7C500E69625 /* FilteringVC.swift */,
-				2BA3C82E27259DB30055CBCC /* TransformingVC.swift */,
+				2BECA174272FFDDF00B9E8D2 /* Source */,
+				2BECA173272FFDD500B9E8D2 /* Resource */,
 			);
 			path = "RxSwift-Test";
 			sourceTree = "<group>";
@@ -152,6 +144,54 @@
 				2B1EC47626EF1AAD00C48EA8 /* Info.plist */,
 			);
 			path = "RxSwift-TestUITests";
+			sourceTree = "<group>";
+		};
+		2BECA173272FFDD500B9E8D2 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2BECA175272FFE0100B9E8D2 /* Storyboards */,
+				2B1EC45B26EF1AAD00C48EA8 /* Assets.xcassets */,
+				2B1EC46026EF1AAD00C48EA8 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2BECA174272FFDDF00B9E8D2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2BECA177272FFE2F00B9E8D2 /* ViewControllers */,
+				2BECA176272FFE2100B9E8D2 /* Supports */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2BECA175272FFE0100B9E8D2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2B1EC45826EF1AAC00C48EA8 /* Main.storyboard */,
+				2B1EC45D26EF1AAD00C48EA8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2BECA176272FFE2100B9E8D2 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				2B1EC45226EF1AAC00C48EA8 /* AppDelegate.swift */,
+				2B1EC45426EF1AAC00C48EA8 /* SceneDelegate.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		2BECA177272FFE2F00B9E8D2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B1EC45626EF1AAC00C48EA8 /* ViewController.swift */,
+				2B83334B27037313007A9BD6 /* ObservableTestVC.swift */,
+				2B664D692712F7C500E69625 /* FilteringVC.swift */,
+				2BA3C82E27259DB30055CBCC /* TransformingVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		5A6589EB38C2C401880C5D92 /* Pods */ = {
@@ -599,7 +639,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QG3GC35LA;
-				INFOPLIST_FILE = "RxSwift-Test/Info.plist";
+				INFOPLIST_FILE = "RxSwift-Test/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -619,7 +659,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QG3GC35LA;
-				INFOPLIST_FILE = "RxSwift-Test/Info.plist";
+				INFOPLIST_FILE = "RxSwift-Test/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
