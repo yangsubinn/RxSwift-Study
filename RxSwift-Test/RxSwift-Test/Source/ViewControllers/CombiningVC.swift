@@ -18,6 +18,7 @@ class CombiningVC: UIViewController {
 
 //        startWithTest()
 //        concatTest()
+        concatFlatTest()
 //        mergeTest()
 //        combineLatest()
 //        zipTest()
@@ -26,7 +27,7 @@ class CombiningVC: UIViewController {
 //        reduceTest()
 //        scanTest()
 //        switchLatestTest()
-        ambiguousTest()
+//        ambiguousTest()
     }
     
     func startWithTest() {
@@ -49,6 +50,50 @@ class CombiningVC: UIViewController {
             .subscribe(onNext:{
                 print($0)
             }).disposed(by: disposeBag)
+    }
+    
+    /// 모르겠다..
+    func concatFlatTest() {
+//        struct Student {
+//            var score: BehaviorSubject<Int>
+//        }
+//
+//        let ryan = Student(score: BehaviorSubject(value: 80))
+//        let charlotte = Student(score: BehaviorSubject(value: 90))
+//
+//        let student = PublishSubject<Student>()
+//
+//        student
+//            .concatMap {
+//                $0.score
+//            }
+//            .subscribe(onNext: {
+//                print($0)
+//            })
+//            .disposed(by: disposeBag)
+//
+//        student.onNext(ryan) /// 80
+//        ryan.score.onNext(85) /// 85
+//
+//        student.onNext(charlotte) /// 90
+//        ryan.score.onNext(95) /// 95
+//
+//        charlotte.score.onNext(100)
+        
+        let sequences = [
+            "Germany": Observable.of("Berlin", "Münich", "Frankfurt"),
+            "Spain": Observable.of("Madrid", "Barcelona", "Valencia")
+        ]
+        
+        let observable = Observable.of("Germany", "Spain")
+        
+        Observable.of("Germany", "Spain")
+            .concatMap({ country in
+//            print("--------")
+            sequences[country] ?? .empty()
+        }).subscribe(onNext: {
+            print($0)
+        }).disposed(by: disposeBag)
     }
     
     func mergeTest() {
