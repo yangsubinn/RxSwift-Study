@@ -17,6 +17,7 @@
 		2B1EC47526EF1AAD00C48EA8 /* RxSwift_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1EC47426EF1AAD00C48EA8 /* RxSwift_TestUITests.swift */; };
 		2B664D6A2712F7C500E69625 /* FilteringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B664D692712F7C500E69625 /* FilteringVC.swift */; };
 		2B83334C27037313007A9BD6 /* ObservableTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83334B27037313007A9BD6 /* ObservableTestVC.swift */; };
+		2B847AD92738D61200291A15 /* TimeBasedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B847AD82738D61200291A15 /* TimeBasedVC.swift */; };
 		2BA3C82F27259DB30055CBCC /* TransformingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3C82E27259DB30055CBCC /* TransformingVC.swift */; };
 		2BECA179272FFF0C00B9E8D2 /* CombiningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BECA178272FFF0C00B9E8D2 /* CombiningVC.swift */; };
 		990AD39805248D326245DE2D /* Pods_RxSwift_Test_RxSwift_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5224C795C6DE4A7D6BC905FB /* Pods_RxSwift_Test_RxSwift_TestUITests.framework */; };
@@ -58,6 +59,7 @@
 		2B1EC47626EF1AAD00C48EA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B664D692712F7C500E69625 /* FilteringVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringVC.swift; sourceTree = "<group>"; };
 		2B83334B27037313007A9BD6 /* ObservableTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTestVC.swift; sourceTree = "<group>"; };
+		2B847AD82738D61200291A15 /* TimeBasedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBasedVC.swift; sourceTree = "<group>"; };
 		2BA3C82E27259DB30055CBCC /* TransformingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformingVC.swift; sourceTree = "<group>"; };
 		2BECA178272FFF0C00B9E8D2 /* CombiningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombiningVC.swift; sourceTree = "<group>"; };
 		2CDF016160FF2700ED83E032 /* Pods-RxSwift-Test-RxSwift-TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Test-RxSwift-TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift-Test-RxSwift-TestUITests/Pods-RxSwift-Test-RxSwift-TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				2B664D692712F7C500E69625 /* FilteringVC.swift */,
 				2BA3C82E27259DB30055CBCC /* TransformingVC.swift */,
 				2BECA178272FFF0C00B9E8D2 /* CombiningVC.swift */,
+				2B847AD82738D61200291A15 /* TimeBasedVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				2B1EC45726EF1AAC00C48EA8 /* ViewController.swift in Sources */,
 				2B1EC45326EF1AAC00C48EA8 /* AppDelegate.swift in Sources */,
 				2BA3C82F27259DB30055CBCC /* TransformingVC.swift in Sources */,
+				2B847AD92738D61200291A15 /* TimeBasedVC.swift in Sources */,
 				2BECA179272FFF0C00B9E8D2 /* CombiningVC.swift in Sources */,
 				2B664D6A2712F7C500E69625 /* FilteringVC.swift in Sources */,
 				2B1EC45526EF1AAC00C48EA8 /* SceneDelegate.swift in Sources */,
