@@ -10,5 +10,8 @@
 | 🥚 RxMemo | [⌨️](https://youtu.be/0nxB89qBpl4) |[📝](https://github.com/yangsubinn/RxSwift-Study/tree/master/RxMemo-Yangsubinn)|
 | Filtering Operator | [🕸](https://github.com/yangsubinn/RxSwift-Study/blob/master/RxSwift-Test/RxSwift-Test/FilteringVC.swift)|[📝](https://nosy-repair-8a6.notion.site/Filtering-Operator-d134d5cbf6d541d2b32fe7dc8f86a032)|
 | Transforming Operator | [🤖](https://github.com/yangsubinn/RxSwift-Study/blob/master/RxSwift-Test/RxSwift-Test/TransformingVC.swift)|[📝](https://nosy-repair-8a6.notion.site/Transforming-afd59bcdcb41404ea5a4d9fd52a20d0f)|
-| Combining Operator | [⛓](https://github.com/yangsubinn/RxSwift-Study/blob/master/RxSwift-Test/RxSwift-Test/Source/ViewControllers/CombiningVC.swift) | [📝](https://nosy-repair-8a6.notion.site/Combining-Operator-a0e2f85c127c4bfb880c15bbbea6ead9)
+| Combining Operator | [⛓](https://github.com/yangsubinn/RxSwift-Study/blob/master/RxSwift-Test/RxSwift-Test/Source/ViewControllers/CombiningVC.swift) | [📝](https://nosy-repair-8a6.notion.site/Combining-Operator-a0e2f85c127c4bfb880c15bbbea6ead9) |
+| Time Based Operator | [⏳](https://github.com/yangsubinn/RxSwift-Study/blob/master/RxSwift-Test/RxSwift-Test/Source/ViewControllers/TimeBasedVC.swift) | [📝](https://nosy-repair-8a6.notion.site/Time-Based-Operator-0255b06d66e249698472a8080ad37bf3)(미완성..)|
+
+
 ###### 이 RxSwift 스터디는 [캐치미🌈](http://catchme.site/)에서 시작되어서..
