@@ -16,14 +16,15 @@ class TimeBasedVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        shareTest()
+//        share()
+        shareRelayTest()
 //        delaySubscription()
 //        delay()
 //        interval()
-        timer()
+//        timer()
     }
     
-    func shareTest() {
+    func share() {
         let result = Observable.of("캐", "치", "미").share()
         
         result.subscribe(onNext: {
@@ -38,7 +39,17 @@ class TimeBasedVC: UIViewController {
     }
     
     func shareRelayTest() {
+        let result = Observable.of("캐", "치", "미").share(replay: 2, scope: .forever)
         
+        result.subscribe(onNext: {
+            print("result1")
+            print($0)
+        }).disposed(by: disposeBag)
+        
+        result.subscribe(onNext: {
+            print("result2")
+            print("\($0)-짱")
+        }).disposed(by: disposeBag)
     }
     
     func delaySubscription() {
