@@ -17,10 +17,11 @@ class MainVC: UIViewController {
     let textLists = ["꼬깔", "지도", "스피커", "타겟", "선물"]
     let titleLabel = UILabel()
     let subTitleLabel = UILabel()
+    let bottomLabel = UILabel()
     let collectionViewFlowLayout = UICollectionViewFlowLayout()
     lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: collectionViewFlowLayout)
     
-    var disposeBag = DisposeBag()
+    var pupuBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,13 +36,15 @@ class MainVC: UIViewController {
         titleLabel.text = "받고싶은 선물 골라골라"
         titleLabel.font = UIFont.boldSystemFont(ofSize: 24)
         
-        subTitleLabel.text = "꼬깔"
+        subTitleLabel.text = textLists[0]
+        bottomLabel.text = "내가 pick한 선물은?"
     }
     
     private func setupLayout() {
         view.addSubview(collectionView)
         view.addSubview(titleLabel)
         view.addSubview(subTitleLabel)
+        view.addSubview(bottomLabel)
         
         titleLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(140)
@@ -58,11 +61,16 @@ class MainVC: UIViewController {
             make.leading.trailing.equalToSuperview()
             make.bottom.equalToSuperview().inset(100)
         }
+        
+        bottomLabel.snp.makeConstraints { make in
+            make.top.equalTo(collectionView.snp.bottom)
+            make.centerX.equalToSuperview()
+        }
     }
     
     private func setupDelegate() {
-        collectionView.delegate = self
-        collectionView.dataSource = self
+//        collectionView.delegate = self
+//        collectionView.dataSource = self
     }
 
     private func setupCollectionView() {
@@ -72,17 +80,34 @@ class MainVC: UIViewController {
         
         collectionViewFlowLayout.minimumLineSpacing = 0
         collectionViewFlowLayout.scrollDirection = .horizontal
-//        collectionViewFlowLayout.itemSize = CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
         
-//        let items = Observable.just(
-//            (1...5).map{"\($0)"}
-//        )
-//
-//        items
-//            .bind(to: collectionView.rx.items(cellIdentifier: MainCVC.identifier, cellType: MainCVC.self)) { (row, element, cell) in
-//                cell.iconImageView.image = UIImage(named: "\(element)")
-//            }
-//            .disposed(by: disposeBag)
+        let items = Observable.just(
+            (1...5).map{"\($0)"}
+        )
+
+        items
+            .bind(to: collectionView.rx.items(cellIdentifier: MainCVC.identifier, cellType: MainCVC.self)) { (row, element, cell) in
+                cell.iconImageView.image = UIImage(named: "\(element)")
+            }
+            .disposed(by: pupuBag)
+        
+        collectionView.rx
+            .itemSelected
+            .subscribe(onNext: { ///indexpath in
+                print("\($0)")
+//                self.bottomLabel.text = self.textLists[indexpath.row]
+                self.bottomLabel.text = self.subTitleLabel.text
+            })
+            .disposed(by: pupuBag)
+        
+//        collectionView.rx
+//            .modelSelected(String.self)
+//            .subscribe(onNext: {
+//                print("\($0)")
+//            })
+//            .disposed(by: pupuBag)
+        
+        collectionView.rx.setDelegate(self).disposed(by: pupuBag)
     }
 }
 
@@ -100,24 +125,24 @@ extension MainVC: UICollectionViewDelegate {
         let index = (offset.x + scrollView.contentInset.left) / view.frame.width
         var roundedIndex = round(index)
         
-//        print("offset: \(offset)")
-//        print("roundedIndex: \(roundedIndex)")
-//        print("------------------------------")
-        
         subTitleLabel.text = "\(textLists[Int(roundedIndex)])"
     }
+    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        bottomLabel.text = subTitleLabel.text
+//    }
 }
 
-extension MainVC: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return lists.count
-    }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainCVC", for: indexPath) as? MainCVC else {return UICollectionViewCell()}
-
-        cell.iconImageView.image = UIImage(named: "\(lists[indexPath.item])")
-
-        return cell
-    }
-}
+//extension MainVC: UICollectionViewDataSource {
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return lists.count
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainCVC", for: indexPath) as? MainCVC else {return UICollectionViewCell()}
+//
+//        cell.iconImageView.image = UIImage(named: "\(lists[indexPath.item])")
+//
+//        return cell
+//    }
+//}
