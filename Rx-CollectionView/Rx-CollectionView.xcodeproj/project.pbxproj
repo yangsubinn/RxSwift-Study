@@ -12,6 +12,8 @@
 		2B15DCCB274E000B00CDB4A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B15DCC9274E000B00CDB4A0 /* Main.storyboard */; };
 		2B15DCCD274E000C00CDB4A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B15DCCC274E000C00CDB4A0 /* Assets.xcassets */; };
 		2B15DCD0274E000C00CDB4A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B15DCCE274E000C00CDB4A0 /* LaunchScreen.storyboard */; };
+		2B15DCDD274E017A00CDB4A0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B15DCDC274E017A00CDB4A0 /* MainVC.swift */; };
+		2B15DCE0274E066000CDB4A0 /* MainCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B15DCDF274E066000CDB4A0 /* MainCVC.swift */; };
 		64DBE4F9360DDE573B736E75 /* Pods_Rx_CollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D038463D839DBF7BC23D43 /* Pods_Rx_CollectionView.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		2B15DCCC274E000C00CDB4A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B15DCCF274E000C00CDB4A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B15DCD1274E000C00CDB4A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B15DCDC274E017A00CDB4A0 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		2B15DCDF274E066000CDB4A0 /* MainCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCVC.swift; sourceTree = "<group>"; };
 		7C679ADFAE3A61B3977135E0 /* Pods-Rx-CollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx-CollectionView.release.xcconfig"; path = "Target Support Files/Pods-Rx-CollectionView/Pods-Rx-CollectionView.release.xcconfig"; sourceTree = "<group>"; };
 		B092F21493E050CF638D4DF3 /* Pods-Rx-CollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx-CollectionView.debug.xcconfig"; path = "Target Support Files/Pods-Rx-CollectionView/Pods-Rx-CollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +84,7 @@
 		2B15DCD8274E002100CDB4A0 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2B15DCDE274E063200CDB4A0 /* Cell */,
 				2B15DCDA274E002F00CDB4A0 /* ViewController */,
 				2B15DCD9274E002700CDB4A0 /* Supports */,
 			);
@@ -98,6 +103,7 @@
 		2B15DCDA274E002F00CDB4A0 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2B15DCDC274E017A00CDB4A0 /* MainVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -109,6 +115,14 @@
 				2B15DCCE274E000C00CDB4A0 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2B15DCDE274E063200CDB4A0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2B15DCDF274E066000CDB4A0 /* MainCVC.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		A4DBE34CF378F21331F87E6B /* Frameworks */ = {
@@ -125,7 +139,6 @@
 				B092F21493E050CF638D4DF3 /* Pods-Rx-CollectionView.debug.xcconfig */,
 				7C679ADFAE3A61B3977135E0 /* Pods-Rx-CollectionView.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -245,6 +258,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B15DCC4274E000B00CDB4A0 /* AppDelegate.swift in Sources */,
+				2B15DCE0274E066000CDB4A0 /* MainCVC.swift in Sources */,
+				2B15DCDD274E017A00CDB4A0 /* MainVC.swift in Sources */,
 				2B15DCC6274E000B00CDB4A0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,8 +410,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QG3GC35LA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Rx-CollectionView/Info.plist";
+				INFOPLIST_FILE = "Rx-CollectionView/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -423,8 +439,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4QG3GC35LA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Rx-CollectionView/Info.plist";
+				INFOPLIST_FILE = "Rx-CollectionView/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
