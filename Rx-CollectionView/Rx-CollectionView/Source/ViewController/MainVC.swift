@@ -70,20 +70,41 @@ class MainVC: UIViewController {
         collectionView.isPagingEnabled = true
         collectionView.showsHorizontalScrollIndicator = false
         
+        collectionViewFlowLayout.minimumLineSpacing = 0
         collectionViewFlowLayout.scrollDirection = .horizontal
+//        collectionViewFlowLayout.itemSize = CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+        
+//        let items = Observable.just(
+//            (1...5).map{"\($0)"}
+//        )
+//
+//        items
+//            .bind(to: collectionView.rx.items(cellIdentifier: MainCVC.identifier, cellType: MainCVC.self)) { (row, element, cell) in
+//                cell.iconImageView.image = UIImage(named: "\(element)")
+//            }
+//            .disposed(by: disposeBag)
     }
 }
 
 extension MainVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
+
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
 }
 
 extension MainVC: UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        
+        var offset = targetContentOffset.pointee
+        let index = (offset.x + scrollView.contentInset.left) / view.frame.width
+        var roundedIndex = round(index)
+        
+//        print("offset: \(offset)")
+//        print("roundedIndex: \(roundedIndex)")
+//        print("------------------------------")
+        
+        subTitleLabel.text = "\(textLists[Int(roundedIndex)])"
     }
 }
 
@@ -91,12 +112,12 @@ extension MainVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return lists.count
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainCVC", for: indexPath) as? MainCVC else {return UICollectionViewCell()}
-        
+
         cell.iconImageView.image = UIImage(named: "\(lists[indexPath.item])")
-        
+
         return cell
     }
 }
