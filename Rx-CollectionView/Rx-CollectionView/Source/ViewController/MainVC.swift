@@ -93,10 +93,16 @@ class MainVC: UIViewController {
         
         collectionView.rx
             .itemSelected
-            .subscribe(onNext: { ///indexpath in
+            .subscribe(onNext: {
                 print("\($0)")
 //                self.bottomLabel.text = self.textLists[indexpath.row]
                 self.bottomLabel.text = self.subTitleLabel.text
+                
+                guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "PresentVC") as? PresentVC else {return}
+                
+                nextVC.titleLabel.text = self.subTitleLabel.text
+                self.present(nextVC, animated: true, completion: nil)
+                
             })
             .disposed(by: pupuBag)
         
