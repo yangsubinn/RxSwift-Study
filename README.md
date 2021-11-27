@@ -12,6 +12,8 @@
 | Transforming Operator | [🤖](https://github.com/yangsubinn/RxSwift-Study/blob/master/RxSwift-Test/RxSwift-Test/TransformingVC.swift)|[📝](https://nosy-repair-8a6.notion.site/Transforming-afd59bcdcb41404ea5a4d9fd52a20d0f)|
 | Combining Operator | [⛓](https://github.com/yangsubinn/RxSwift-Study/blob/master/RxSwift-Test/RxSwift-Test/Source/ViewControllers/CombiningVC.swift) | [📝](https://nosy-repair-8a6.notion.site/Combining-Operator-a0e2f85c127c4bfb880c15bbbea6ead9) |
 | Time Based Operator | [⏳](https://github.com/yangsubinn/RxSwift-Study/blob/master/RxSwift-Test/RxSwift-Test/Source/ViewControllers/TimeBasedVC.swift) | [📝](https://nosy-repair-8a6.notion.site/Time-Based-Operator-0255b06d66e249698472a8080ad37bf3)(미완성..)|
+| Beginning RxCocoa | [☕️](https://nosy-repair-8a6.notion.site/Beginning-RxCocoa-7db4f3f2e9b54b539f3d3fc04080b342) | [📝](https://github.com/yangsubinn/RxSwift-Study/blob/master/RxSwift-Test/RxSwift-Test/Source/ViewControllers/RxCocoaVC.swift) |
+| Intermediate RxCocoa | [☕️](https://nosy-repair-8a6.notion.site/Intermediate-RxCocoa-89380b6d22a749d0b754a21dddaf4239) | [📝](https://github.com/yangsubinn/RxSwift-Study/tree/master/Rx-CollectionView) |
 
 
 ###### 이 RxSwift 스터디는 [캐치미🌈](http://catchme.site/)에서 시작되어서..
