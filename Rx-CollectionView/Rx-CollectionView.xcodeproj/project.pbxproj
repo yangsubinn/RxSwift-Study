@@ -15,6 +15,11 @@
 		2B15DCDD274E017A00CDB4A0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B15DCDC274E017A00CDB4A0 /* MainVC.swift */; };
 		2B15DCE0274E066000CDB4A0 /* MainCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B15DCDF274E066000CDB4A0 /* MainCVC.swift */; };
 		2B15DCE2274EAD8F00CDB4A0 /* PresentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B15DCE1274EAD8F00CDB4A0 /* PresentVC.swift */; };
+		2BC5177E274F70F2003B3235 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC5177D274F70F2003B3235 /* MainScene.swift */; };
+		2BC51781274F7223003B3235 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC51780274F7223003B3235 /* MainViewModel.swift */; };
+		2BC51784274F724A003B3235 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC51783274F724A003B3235 /* SceneCoordinatorType.swift */; };
+		2BC51786274F72ED003B3235 /* SceneRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC51785274F72ED003B3235 /* SceneRegisterable.swift */; };
+		2BC51788274F7381003B3235 /* TransitionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC51787274F7381003B3235 /* TransitionModel.swift */; };
 		64DBE4F9360DDE573B736E75 /* Pods_Rx_CollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20D038463D839DBF7BC23D43 /* Pods_Rx_CollectionView.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +35,11 @@
 		2B15DCDC274E017A00CDB4A0 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		2B15DCDF274E066000CDB4A0 /* MainCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCVC.swift; sourceTree = "<group>"; };
 		2B15DCE1274EAD8F00CDB4A0 /* PresentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentVC.swift; sourceTree = "<group>"; };
+		2BC5177D274F70F2003B3235 /* MainScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
+		2BC51780274F7223003B3235 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		2BC51783274F724A003B3235 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
+		2BC51785274F72ED003B3235 /* SceneRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneRegisterable.swift; sourceTree = "<group>"; };
+		2BC51787274F7381003B3235 /* TransitionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionModel.swift; sourceTree = "<group>"; };
 		7C679ADFAE3A61B3977135E0 /* Pods-Rx-CollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx-CollectionView.release.xcconfig"; path = "Target Support Files/Pods-Rx-CollectionView/Pods-Rx-CollectionView.release.xcconfig"; sourceTree = "<group>"; };
 		B092F21493E050CF638D4DF3 /* Pods-Rx-CollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rx-CollectionView.debug.xcconfig"; path = "Target Support Files/Pods-Rx-CollectionView/Pods-Rx-CollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +96,9 @@
 		2B15DCD8274E002100CDB4A0 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2BC51782274F722F003B3235 /* Coordinator */,
+				2BC5177F274F71F0003B3235 /* ViewModels */,
+				2BC5177C274F70D9003B3235 /* Scene */,
 				2B15DCDE274E063200CDB4A0 /* Cell */,
 				2B15DCDA274E002F00CDB4A0 /* ViewController */,
 				2B15DCD9274E002700CDB4A0 /* Supports */,
@@ -126,6 +139,32 @@
 				2B15DCDF274E066000CDB4A0 /* MainCVC.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		2BC5177C274F70D9003B3235 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				2BC5177D274F70F2003B3235 /* MainScene.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		2BC5177F274F71F0003B3235 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2BC51780274F7223003B3235 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2BC51782274F722F003B3235 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2BC51783274F724A003B3235 /* SceneCoordinatorType.swift */,
+				2BC51785274F72ED003B3235 /* SceneRegisterable.swift */,
+				2BC51787274F7381003B3235 /* TransitionModel.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		A4DBE34CF378F21331F87E6B /* Frameworks */ = {
@@ -260,10 +299,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC51781274F7223003B3235 /* MainViewModel.swift in Sources */,
+				2BC51786274F72ED003B3235 /* SceneRegisterable.swift in Sources */,
+				2BC51784274F724A003B3235 /* SceneCoordinatorType.swift in Sources */,
 				2B15DCC4274E000B00CDB4A0 /* AppDelegate.swift in Sources */,
 				2B15DCE2274EAD8F00CDB4A0 /* PresentVC.swift in Sources */,
 				2B15DCE0274E066000CDB4A0 /* MainCVC.swift in Sources */,
+				2BC5177E274F70F2003B3235 /* MainScene.swift in Sources */,
 				2B15DCDD274E017A00CDB4A0 /* MainVC.swift in Sources */,
+				2BC51788274F7381003B3235 /* TransitionModel.swift in Sources */,
 				2B15DCC6274E000B00CDB4A0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -127,9 +127,9 @@ extension MainVC: UICollectionViewDelegateFlowLayout {
 extension MainVC: UICollectionViewDelegate {
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         
-        var offset = targetContentOffset.pointee
+        let offset = targetContentOffset.pointee
         let index = (offset.x + scrollView.contentInset.left) / view.frame.width
-        var roundedIndex = round(index)
+        let roundedIndex = round(index)
         
         subTitleLabel.text = "\(textLists[Int(roundedIndex)])"
     }

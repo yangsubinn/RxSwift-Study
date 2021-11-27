@@ -17,6 +17,10 @@ class PresentVC: UIViewController {
         setupLayout()
     }
     
+    func configUI() {
+        titleLabel.text = "기본"
+    }
+    
     func setupLayout() {
         view.addSubview(titleLabel)
         
