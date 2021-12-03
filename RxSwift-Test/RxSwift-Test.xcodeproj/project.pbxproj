@@ -16,6 +16,7 @@
 		2B1EC45F26EF1AAD00C48EA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1EC45D26EF1AAD00C48EA8 /* LaunchScreen.storyboard */; };
 		2B1EC46A26EF1AAD00C48EA8 /* RxSwift_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1EC46926EF1AAD00C48EA8 /* RxSwift_TestTests.swift */; };
 		2B1EC47526EF1AAD00C48EA8 /* RxSwift_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1EC47426EF1AAD00C48EA8 /* RxSwift_TestUITests.swift */; };
+		2B5AD1552754BE1C00A5D9B2 /* ErrorHandlingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5AD1542754BE1C00A5D9B2 /* ErrorHandlingVC.swift */; };
 		2B664D6A2712F7C500E69625 /* FilteringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B664D692712F7C500E69625 /* FilteringVC.swift */; };
 		2B83334C27037313007A9BD6 /* ObservableTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83334B27037313007A9BD6 /* ObservableTestVC.swift */; };
 		2B847AD92738D61200291A15 /* TimeBasedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B847AD82738D61200291A15 /* TimeBasedVC.swift */; };
@@ -59,6 +60,7 @@
 		2B1EC47026EF1AAD00C48EA8 /* RxSwift-TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxSwift-TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1EC47426EF1AAD00C48EA8 /* RxSwift_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwift_TestUITests.swift; sourceTree = "<group>"; };
 		2B1EC47626EF1AAD00C48EA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B5AD1542754BE1C00A5D9B2 /* ErrorHandlingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlingVC.swift; sourceTree = "<group>"; };
 		2B664D692712F7C500E69625 /* FilteringVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringVC.swift; sourceTree = "<group>"; };
 		2B83334B27037313007A9BD6 /* ObservableTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTestVC.swift; sourceTree = "<group>"; };
 		2B847AD82738D61200291A15 /* TimeBasedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBasedVC.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				2BECA178272FFF0C00B9E8D2 /* CombiningVC.swift */,
 				2B847AD82738D61200291A15 /* TimeBasedVC.swift */,
 				2B009FE127440533009A5BBE /* RxCocoaVC.swift */,
+				2B5AD1542754BE1C00A5D9B2 /* ErrorHandlingVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				2B664D6A2712F7C500E69625 /* FilteringVC.swift in Sources */,
 				2B1EC45526EF1AAC00C48EA8 /* SceneDelegate.swift in Sources */,
 				2B83334C27037313007A9BD6 /* ObservableTestVC.swift in Sources */,
+				2B5AD1552754BE1C00A5D9B2 /* ErrorHandlingVC.swift in Sources */,
 				2B009FE227440533009A5BBE /* RxCocoaVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
