@@ -81,35 +81,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AvoideDuplicationVC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEY-SK-zdL">
-                                <rect key="frame" x="127.5" y="437.5" width="159" height="21"/>
+                                <rect key="frame" x="127.5" y="244" width="159" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ah-zl-Akw">
-                                <rect key="frame" x="171" y="502.5" width="72" height="31"/>
+                                <rect key="frame" x="168" y="305" width="78" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="throttle"/>
+                                <buttonConfiguration key="configuration" style="plain" title="throttle1"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcC-cb-ZUY">
-                                <rect key="frame" x="162.5" y="563.5" width="89" height="31"/>
+                                <rect key="frame" x="159.5" y="447" width="95" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="debounce"/>
+                                <buttonConfiguration key="configuration" style="plain" title="debounce1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLF-jo-WwF">
+                                <rect key="frame" x="167" y="356" width="80" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="throttle2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erG-hB-S3g">
+                                <rect key="frame" x="158.5" y="498" width="97" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="debounce2"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rPZ-ex-jTj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zcC-cb-ZUY" firstAttribute="centerX" secondItem="vMO-mh-evj" secondAttribute="centerX" id="E5m-2h-r5H"/>
-                            <constraint firstItem="zcC-cb-ZUY" firstAttribute="top" secondItem="9Ah-zl-Akw" secondAttribute="bottom" constant="30" id="GIY-AX-0Bp"/>
-                            <constraint firstItem="9Ah-zl-Akw" firstAttribute="centerX" secondItem="vMO-mh-evj" secondAttribute="centerX" id="QWQ-Jw-El8"/>
-                            <constraint firstItem="OEY-SK-zdL" firstAttribute="centerY" secondItem="vMO-mh-evj" secondAttribute="centerY" id="XKB-ci-6Wg"/>
+                            <constraint firstItem="erG-hB-S3g" firstAttribute="centerX" secondItem="vMO-mh-evj" secondAttribute="centerX" id="3pi-pp-cxq"/>
+                            <constraint firstItem="zcC-cb-ZUY" firstAttribute="top" secondItem="pLF-jo-WwF" secondAttribute="bottom" constant="60" id="Hsy-Gn-4IN"/>
+                            <constraint firstItem="pLF-jo-WwF" firstAttribute="top" secondItem="9Ah-zl-Akw" secondAttribute="bottom" constant="20" id="Ils-hh-zmy"/>
+                            <constraint firstItem="9Ah-zl-Akw" firstAttribute="top" secondItem="OEY-SK-zdL" secondAttribute="bottom" constant="40" id="KIb-Np-iXs"/>
+                            <constraint firstItem="9Ah-zl-Akw" firstAttribute="centerX" secondItem="vMO-mh-evj" secondAttribute="centerX" id="MZ8-6J-FoM"/>
+                            <constraint firstItem="zcC-cb-ZUY" firstAttribute="centerX" secondItem="vMO-mh-evj" secondAttribute="centerX" id="Z9e-c6-337"/>
+                            <constraint firstItem="erG-hB-S3g" firstAttribute="top" secondItem="zcC-cb-ZUY" secondAttribute="bottom" constant="20" id="duQ-Kq-2OA"/>
+                            <constraint firstItem="pLF-jo-WwF" firstAttribute="centerX" secondItem="vMO-mh-evj" secondAttribute="centerX" id="fhk-VO-O7L"/>
+                            <constraint firstItem="OEY-SK-zdL" firstAttribute="top" secondItem="rPZ-ex-jTj" secondAttribute="top" constant="200" id="puM-B8-klI"/>
                             <constraint firstItem="OEY-SK-zdL" firstAttribute="centerX" secondItem="vMO-mh-evj" secondAttribute="centerX" id="vNc-Yx-x2o"/>
-                            <constraint firstItem="9Ah-zl-Akw" firstAttribute="top" secondItem="OEY-SK-zdL" secondAttribute="bottom" constant="44" id="z05-hi-a14"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="debounceButton" destination="zcC-cb-ZUY" id="lFB-Ug-PTw"/>
+                        <outlet property="otherDebounceButton" destination="erG-hB-S3g" id="T5x-Ks-YwQ"/>
+                        <outlet property="otherThrottleButton" destination="pLF-jo-WwF" id="ewH-hC-k7B"/>
                         <outlet property="throttleButton" destination="9Ah-zl-Akw" id="kwz-XK-HLY"/>
                     </connections>
                 </viewController>
