@@ -21,6 +21,7 @@
 		2B83334C27037313007A9BD6 /* ObservableTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B83334B27037313007A9BD6 /* ObservableTestVC.swift */; };
 		2B847AD92738D61200291A15 /* TimeBasedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B847AD82738D61200291A15 /* TimeBasedVC.swift */; };
 		2BA3C82F27259DB30055CBCC /* TransformingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA3C82E27259DB30055CBCC /* TransformingVC.swift */; };
+		2BABE363280BE70100EFA45E /* AvoidDuplicationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BABE362280BE70100EFA45E /* AvoidDuplicationVC.swift */; };
 		2BECA179272FFF0C00B9E8D2 /* CombiningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BECA178272FFF0C00B9E8D2 /* CombiningVC.swift */; };
 		990AD39805248D326245DE2D /* Pods_RxSwift_Test_RxSwift_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5224C795C6DE4A7D6BC905FB /* Pods_RxSwift_Test_RxSwift_TestUITests.framework */; };
 		AC0458FB7086102DFA003642 /* Pods_RxSwift_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0AA32E4A385E04EE390D3A /* Pods_RxSwift_Test.framework */; };
@@ -65,6 +66,7 @@
 		2B83334B27037313007A9BD6 /* ObservableTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTestVC.swift; sourceTree = "<group>"; };
 		2B847AD82738D61200291A15 /* TimeBasedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBasedVC.swift; sourceTree = "<group>"; };
 		2BA3C82E27259DB30055CBCC /* TransformingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformingVC.swift; sourceTree = "<group>"; };
+		2BABE362280BE70100EFA45E /* AvoidDuplicationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidDuplicationVC.swift; sourceTree = "<group>"; };
 		2BECA178272FFF0C00B9E8D2 /* CombiningVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombiningVC.swift; sourceTree = "<group>"; };
 		2CDF016160FF2700ED83E032 /* Pods-RxSwift-Test-RxSwift-TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Test-RxSwift-TestUITests.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift-Test-RxSwift-TestUITests/Pods-RxSwift-Test-RxSwift-TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		379BF9186E15CF3079601874 /* Pods-RxSwift-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-Test.release.xcconfig"; path = "Target Support Files/Pods-RxSwift-Test/Pods-RxSwift-Test.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				2B847AD82738D61200291A15 /* TimeBasedVC.swift */,
 				2B009FE127440533009A5BBE /* RxCocoaVC.swift */,
 				2B5AD1542754BE1C00A5D9B2 /* ErrorHandlingVC.swift */,
+				2BABE362280BE70100EFA45E /* AvoidDuplicationVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				2B847AD92738D61200291A15 /* TimeBasedVC.swift in Sources */,
 				2BECA179272FFF0C00B9E8D2 /* CombiningVC.swift in Sources */,
 				2B664D6A2712F7C500E69625 /* FilteringVC.swift in Sources */,
+				2BABE363280BE70100EFA45E /* AvoidDuplicationVC.swift in Sources */,
 				2B1EC45526EF1AAC00C48EA8 /* SceneDelegate.swift in Sources */,
 				2B83334C27037313007A9BD6 /* ObservableTestVC.swift in Sources */,
 				2B5AD1552754BE1C00A5D9B2 /* ErrorHandlingVC.swift in Sources */,

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mo8-b9-46u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5wc-vy-3vb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -71,6 +71,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oWZ-T6-1Ub" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="919"/>
+        </scene>
+        <!--Avoid DuplicationVC-->
+        <scene sceneID="T9u-Ou-YSK">
+            <objects>
+                <viewController storyboardIdentifier="AvoidDuplicationVC" id="5wc-vy-3vb" customClass="AvoidDuplicationVC" customModule="RxSwift_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vMO-mh-evj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AvoideDuplicationVC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEY-SK-zdL">
+                                <rect key="frame" x="127.5" y="437.5" width="159" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ah-zl-Akw">
+                                <rect key="frame" x="171" y="502.5" width="72" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="throttle"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcC-cb-ZUY">
+                                <rect key="frame" x="162.5" y="563.5" width="89" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="debounce"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rPZ-ex-jTj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zcC-cb-ZUY" firstAttribute="centerX" secondItem="vMO-mh-evj" secondAttribute="centerX" id="E5m-2h-r5H"/>
+                            <constraint firstItem="zcC-cb-ZUY" firstAttribute="top" secondItem="9Ah-zl-Akw" secondAttribute="bottom" constant="30" id="GIY-AX-0Bp"/>
+                            <constraint firstItem="9Ah-zl-Akw" firstAttribute="centerX" secondItem="vMO-mh-evj" secondAttribute="centerX" id="QWQ-Jw-El8"/>
+                            <constraint firstItem="OEY-SK-zdL" firstAttribute="centerY" secondItem="vMO-mh-evj" secondAttribute="centerY" id="XKB-ci-6Wg"/>
+                            <constraint firstItem="OEY-SK-zdL" firstAttribute="centerX" secondItem="vMO-mh-evj" secondAttribute="centerX" id="vNc-Yx-x2o"/>
+                            <constraint firstItem="9Ah-zl-Akw" firstAttribute="top" secondItem="OEY-SK-zdL" secondAttribute="bottom" constant="44" id="z05-hi-a14"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="debounceButton" destination="zcC-cb-ZUY" id="lFB-Ug-PTw"/>
+                        <outlet property="throttleButton" destination="9Ah-zl-Akw" id="kwz-XK-HLY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B7X-o3-Sx4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.86956521739137" y="918.75"/>
         </scene>
         <!--ObservableTestVC-->
         <scene sceneID="FRb-xL-eSa">
