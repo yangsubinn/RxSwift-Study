@@ -25,7 +25,8 @@
 		2BEBBACA292364B1009BCC69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BEBBACD292364B1009BCC69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BEBBACF292364B1009BCC69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BEBBAD629236B1D009BCC69 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2BEBBAD629236B1D009BCC69 /* Observables.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Observables.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		2BEBBAD829238CDF009BCC69 /* Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subject.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3AB359E062A3840865702852 /* Pods-RxPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPlayground.release.xcconfig"; path = "Target Support Files/Pods-RxPlayground/Pods-RxPlayground.release.xcconfig"; sourceTree = "<group>"; };
 		3D896A474EA8906C1B854EC5 /* Pods-RxPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPlayground.debug.xcconfig"; path = "Target Support Files/Pods-RxPlayground/Pods-RxPlayground.debug.xcconfig"; sourceTree = "<group>"; };
 		7C2198224E5E01FDEA68BEE5 /* Pods_RxPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,7 +72,8 @@
 				2BEBBACA292364B1009BCC69 /* Assets.xcassets */,
 				2BEBBACC292364B1009BCC69 /* LaunchScreen.storyboard */,
 				2BEBBACF292364B1009BCC69 /* Info.plist */,
-				2BEBBAD629236B1D009BCC69 /* MyPlayground.playground */,
+				2BEBBAD629236B1D009BCC69 /* Observables.playground */,
+				2BEBBAD829238CDF009BCC69 /* Subject.playground */,
 			);
 			path = RxPlayground;
 			sourceTree = "<group>";
